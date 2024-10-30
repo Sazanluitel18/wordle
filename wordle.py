@@ -5,14 +5,14 @@ import sys
 def main():
     # Get a random word.
     answer = getRandomWord()
-    # print(answer)
+    print(answer)
 
     # PUT YOUR CODE HERE.
     user_answer = ""
     count = 0
     while user_answer != answer:
         if count == 5:
-            print("Sorry! You choosed wrong word!")
+            print(f"Sorry! You choosed wrong word!The correct one was : {answer}")
             break
 
         user_answer = str(input("Enter a 5 letter guess?: "))
@@ -22,7 +22,7 @@ def main():
         printGuessColors(user_answer, answer)
         count += 1
     else:
-        print("You guessed correct word!")
+        print(f"You guessed correct word! You took {count} attempt!")
 
     # Start by asking the user for their initial guess
     # Ask them to "Enter a 5 letter guess?"
