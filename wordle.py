@@ -5,7 +5,7 @@ import sys
 def main():
     # Get a random word.
     answer = getRandomWord()
-    print(answer)
+    # print(answer)
 
     # PUT YOUR CODE HERE.
     user_answer = ""
