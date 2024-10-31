@@ -6,6 +6,9 @@ def main():
     # Get a random word.
     answer = getRandomWord()
     # print(answer)
+    print(
+        "Welcome to my Wordle World! PLay and Have some Fun! You have five attempts to make it right!"
+    )
 
     # PUT YOUR CODE HERE.
     user_answer = ""
@@ -19,10 +22,13 @@ def main():
         if len(user_answer) != 5:
             print("Please enter only 5 letter words")
             continue
+        if not user_answer.isalpha():
+            print("Please enter only letters!")
+            continue
         printGuessColors(user_answer, answer)
         count += 1
     else:
-        print(f"You guessed correct word! You took {count} attempt!")
+        print(f"Congratulations! You guessed right word! You took {count} attempt!")
 
     # Start by asking the user for their initial guess
     # Ask them to "Enter a 5 letter guess?"

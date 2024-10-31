@@ -53,7 +53,8 @@ urban
 extra
 hover
 cover
-loverlight
+lover
+light
 stove
 might
 white
